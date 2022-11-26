@@ -41,7 +41,7 @@ public class MaximalSquare {
         		maxLen = Math.max(maxLen, matrix[r][c] - '0');
         	}
         }
-        System.out.println(Arrays.deepToString(matrix));
+        //System.out.println(Arrays.deepToString(matrix));
         return maxLen * maxLen;
     }
     
