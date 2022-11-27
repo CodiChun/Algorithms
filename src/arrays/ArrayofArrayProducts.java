@@ -24,20 +24,20 @@ public class ArrayofArrayProducts {
 		    for(int i=1; i<arr.length; i++){
 		      before[i] = arr[i-1] * before[i-1]; 
 		    }
-		    System.out.println(Arrays.toString(before));
+		    //System.out.println(Arrays.toString(before));
 		    
 		    after[arr.length-1] = 1;
 		     for(int i=arr.length-2; i>=0; i--){
 		      after[i] = arr[i+1] * after[i+1]; 
 		    }
-		    System.out.println(Arrays.toString(after));
+		    //System.out.println(Arrays.toString(after));
 		    
 		    
 		    int[] output = new int[arr.length];
 		    for(int i=0; i<arr.length; i++){
 		      output[i] = before[i] * after[i]; 
 		    }
-		    System.out.println(Arrays.toString(output));
+		    //System.out.println(Arrays.toString(output));
 		    
 		    return output;
 		  }
