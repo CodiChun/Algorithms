@@ -7,14 +7,27 @@ public class ReverseLinkedList {
 
 	}
 	
-	//_<1 null
-	//p c n 
-	//  p c
+	//d<1 2>3>4>5>n
+	//p c n
+	//  p c n
+	//
+	//time: o(n)
+	//space: o(1)
 	
 	
     public ListNode reverseList(ListNode head) {
-    	
 
+    	ListNode pre = null;
+    	ListNode curr = head;
+    	
+    	while(curr!=null) {
+    		ListNode next = curr.next;
+    		curr.next = pre;
+    		pre = curr;
+    		curr = next;
+    	}
+    	
+    	return pre;
 
     }
 
