@@ -10,9 +10,9 @@ public class LongestCommonSubsequence {
 	//abcde
 	//a c e
 	//  abcde
-	// a32211
-	// c22211
-	// e11111
+	// a
+	// c
+	// e
 	
 	//1. double array + 0s
 	//2. if the characters are the same, go diagol
