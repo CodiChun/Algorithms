@@ -3,6 +3,9 @@ package tree;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * Reucurtion
+ */
 public class BinaryTreeLevelOrderTraversal {
 
 	public static void main(String[] args) {
@@ -16,6 +19,7 @@ public class BinaryTreeLevelOrderTraversal {
 	
 	List<List<Integer>> levels = new ArrayList<>();
 	
+	//recurtion
     public List<List<Integer>> levelOrder(TreeNode root) {
     	if(root == null) {
     		return levels;
