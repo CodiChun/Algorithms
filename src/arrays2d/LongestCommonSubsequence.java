@@ -8,23 +8,19 @@ public class LongestCommonSubsequence {
 	}
 	
 	//abcde
-	//a c e
+	// ace
 	//  abcde
-	// a
-	// c
-	// e
+	// a1
+	// c 01
+	// e    1
+	//
+	//time:o(m*n)
+	//space:o(m*n)
+	//
+	//
+	//
 	
-	//1. double array + 0s
-	//2. if the characters are the same, go diagol
-	//3. else, max(right,down)
 	
-	//o(m*n)
-	//o(m*x)
-	
-    public int longestCommonSubsequence(String text1, String text2) {
-    	
  
-
-    }
 
 }
