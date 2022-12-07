@@ -7,8 +7,6 @@ public class FindBottomLeftTreeValue {
 
 	
 	/*
-	 * level search
-	 * level: right -> left
 	 * 
 	 */
 	public static void main(String[] args) {
@@ -18,6 +16,14 @@ public class FindBottomLeftTreeValue {
 	
     public int findBottomLeftValue(TreeNode root) {
     	
-
-
+    	Queue<TreeNode> q = new LinkedList<>();
+    	q.add(root);
+    	TreeNode curr = null;
+    	while(!q.isEmpty()) {
+    		curr = q.poll();
+    		q.add(curr.right);
+    		q.add(curr.left);
+    	}
+    	return curr.val;
+    }
 }
