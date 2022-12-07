@@ -7,7 +7,8 @@ public class FindBottomLeftTreeValue {
 
 	
 	/*
-	 * 
+	 * time: o(n)
+	 * space: o(n)
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -21,8 +22,10 @@ public class FindBottomLeftTreeValue {
     	TreeNode curr = null;
     	while(!q.isEmpty()) {
     		curr = q.poll();
-    		q.add(curr.right);
-    		q.add(curr.left);
+    		if(curr.right!=null)
+    			q.add(curr.right);
+    		if(curr.left!=null)
+    			q.add(curr.left);
     	}
     	return curr.val;
     }
