@@ -12,14 +12,13 @@ public class InorderTraversalIteration {
 	}
 	
 	/*
-	 * left->root->right
-	 * stack:
-	 * pointer: curr -> left -> root ->right
+	 * left child ->parent ->right child
+	 * stack
+	 * 
 	 */
 	
     public List<Integer> inorderTraversal(TreeNode root) {
-    	
-        
+
     }
 
 }
